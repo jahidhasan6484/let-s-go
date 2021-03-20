@@ -15,7 +15,6 @@ import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
 import Destinations from './Components/Destination/Destinations';
 
 export const UserContext = createContext();
-//
 
 function App() {
   const [loggedInUser, setLoggedInUser] = useState({});
@@ -31,9 +30,6 @@ function App() {
           <Route path="/home">
             <Home></Home>
           </Route>
-          {/* <PrivateRoute path="/destinations">
-            <Destinations></Destinations>
-          </PrivateRoute> */}
           <Route path="/login">
             <Login></Login>
           </Route>

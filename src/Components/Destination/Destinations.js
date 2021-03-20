@@ -15,7 +15,7 @@ const Destinations = () => {
         setTransportDetail(data[0]);
     }, [])
 
-    console.log(transportDetail.name);
+     const { name } = transportDetail;
 
 
     const [searchLocation, setSearchLocation] = useState({
@@ -47,9 +47,12 @@ const Destinations = () => {
                                 <input type="submit" value="Search" className="btn btn-info form-control" />
                             </div>
                         </form>
+                        <p>{searchLocation.pickFrom}</p>
+                        <p>{searchLocation.pickTo}</p>
                     </div>
                 </div>
                 <div className="col-md-8">
+                    <p>{name}</p>
                     <img className="img-fluid" src={map} alt="" />
                 </div>
             </div>

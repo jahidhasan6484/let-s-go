@@ -5,7 +5,6 @@ import { UserContext } from '../../App';
 
 const Profile = () => {
     const [loggedInUser, setLoggedInUser] = useContext(UserContext);
-    console.log(loggedInUser.email);
 
     const handleLogOut = ()=> {
         setLoggedInUser("");
@@ -19,7 +18,7 @@ const Profile = () => {
             </div>
                     <div className="card-body py-5">
                         <img src={loggedInUser.photo} width="100" alt="Profile Pic" />
-                        <h5 className="card-title pt-4">{loggedInUser.name}</h5>
+                        <h5 className="card-title pt-4">{loggedInUser.email}</h5>
                         <hp className="card-text">{loggedInUser.email}</hp>
                         <br/><br/><br/>
                         <Nav.Link as={Link} onClick={handleLogOut} className="btn btn-info" to="/home">Log Out</Nav.Link>

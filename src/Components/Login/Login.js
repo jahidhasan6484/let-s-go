@@ -4,10 +4,6 @@ import "firebase/auth";
 import firebaseConfig from './firebase.config';
 import { UserContext } from '../../App';
 import { useHistory, useLocation } from 'react-router';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { faCoffee } from '@fortawesome/free-solid-svg-icons';
-
-import image from '../../images/authentication.svg';
 import facebookLogo from '../../images/facebook.png';
 import googleLogo from '../../images/google.png';
 
@@ -109,8 +105,6 @@ const Login = () => {
                     newUserInfo.error = "";
                     newUserInfo.success = true;
                     setNewUser(newUserInfo);
-
-                    // updateUserName(newUser.name);
                 })
                 .catch((error) => {
                     const newUserInfo = { ...newUser };
@@ -128,8 +122,9 @@ const Login = () => {
                     newUserInfo.success = true;
                     setNewUser(newUserInfo);
                     //............
-                    setLoggedInUser(newUserInfo);
+                    setLoggedInUser(newUser);
                     history.replace(from);
+
                 })
                 .catch((error) => {
                     const newUserInfo = { ...newUser };
@@ -138,7 +133,6 @@ const Login = () => {
                     setNewUser(newUserInfo);
                 });
         }
-
         e.preventDefault();
     }
 

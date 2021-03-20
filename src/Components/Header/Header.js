@@ -19,7 +19,7 @@ const Header = () => {
                         <Nav.Link as={Link} className="text-dark" >Blog</Nav.Link>
                         <Nav.Link as={Link} className="text-dark" >Contact</Nav.Link>
                         {
-                            loggedInUser.email ? <Nav.Link as={Link} className="text-dark" to="/profile">{loggedInUser.name}</Nav.Link> :
+                            loggedInUser.email ? <Nav.Link as={Link} className="text-dark" to="/profile">{loggedInUser.name || loggedInUser.email}</Nav.Link> :
                             <Nav.Link as={Link} className="btn btn-info" to="/login">login</Nav.Link>
                         }
                         

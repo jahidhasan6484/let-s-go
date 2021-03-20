@@ -13,8 +13,8 @@ const Body = (props) => {
                 <Card.Body>
                     <div className="text-center">
                         <h3 className="text-dark">{name}</h3>
-                        <Button as={Link} to={`/destinations/${id}`} className="btn btn-info mr-1 mt-1">Details</Button>
-                        <Button as={Link} to="destinations" className="btn btn-info mt-1">Ticket</Button>
+                        <Button as={Link} to={`/destinations/${id}`} className="btn btn-info mr-1 mt-1">Ticket</Button>
+                        <Button as={Link} to="destinations" className="btn btn-info mt-1">Ticket1</Button>
                     </div>
                 </Card.Body>
             </Card>

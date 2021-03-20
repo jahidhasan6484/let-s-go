@@ -40,9 +40,9 @@ function App() {
           <Route path="/profile">
             <Profile></Profile>
           </Route>
-          <PrivateRoute path="/destination/:id/">
+          {/* <PrivateRoute path="/destination/:id/">
             <Destinations></Destinations>
-          </PrivateRoute>
+          </PrivateRoute> */}
           <Route path="*">
             <h1 className="text-center my-5">404 - Not Found!</h1>
           </Route>

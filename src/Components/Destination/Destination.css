@@ -3,3 +3,6 @@
     padding: 1rem;
     border-radius: 1rem;
 }
+.ticket-details {
+    display: flex;
+}

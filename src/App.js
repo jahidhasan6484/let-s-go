@@ -31,18 +31,18 @@ function App() {
           <Route path="/home">
             <Home></Home>
           </Route>
-          <PrivateRoute path="/destinations">
+          {/* <PrivateRoute path="/destinations">
             <Destinations></Destinations>
-          </PrivateRoute>
+          </PrivateRoute> */}
           <Route path="/login">
             <Login></Login>
           </Route>
           <Route path="/profile">
             <Profile></Profile>
           </Route>
-          {/* <PrivateRoute path="/destination/:id/">
+          <PrivateRoute path="/destinations/:id">
             <Destinations></Destinations>
-          </PrivateRoute> */}
+          </PrivateRoute>
           <Route path="*">
             <h1 className="text-center my-5">404 - Not Found!</h1>
           </Route>

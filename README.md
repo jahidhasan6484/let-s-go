@@ -4,7 +4,7 @@ Name of this project is "Let'sGO!"
 It's an ticket manager application of four vehicles including Bike, Car, Bus and Train.
 For use this application you have to log in yourself first. You can access this application by creating an account using mail address and password. Also you can use Facebook and Google account for using this application.
 
-## Language used in this project
+## Used languages in this project
 1. HTML
 2. CSS
 3. JavaScript

@@ -5,6 +5,7 @@ import { UserContext } from '../../App';
 import './Profile.css';
 
 const Profile = () => {
+    document.title="Let'sGO!/Profile";
     const [loggedInUser, setLoggedInUser] = useContext(UserContext);
 
     const handleLogOut = () => {

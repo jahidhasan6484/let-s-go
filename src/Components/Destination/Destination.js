@@ -5,6 +5,7 @@ import './Destination.css';
 import map from '../../images/Map.png';
 
 const Destinations = () => {
+    document.title="Let'sGO!/Destination";
     const { id } = useParams();
 
     const transport = data.find(transport => transport.id == id)

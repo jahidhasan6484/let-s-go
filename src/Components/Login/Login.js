@@ -10,6 +10,7 @@ import './Login.css';
 import { Link } from 'react-router-dom';
 
 const Login = () => {
+    document.title="Let'sGO!/Login";
     const [option, setOption] = useState('register');
     const [createUser, setCreateUser] = useState(false);
 

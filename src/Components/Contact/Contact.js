@@ -2,6 +2,7 @@ import React from 'react';
 import './Contact.css';
 
 const Contact = () => {
+    document.title="Let'sGO!/Contact";
     return (
         <div className="container text-center contact">
             <div>

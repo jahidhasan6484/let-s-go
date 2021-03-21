@@ -3,7 +3,7 @@ import { GoogleMap, LoadScript, DirectionsService, DirectionsRenderer } from '@r
 
 const containerStyle = {
     width: '100%',
-    height: '400px'
+    height: '100%'
 };
 
 const location = {
@@ -12,6 +12,7 @@ const location = {
 };
 
 function Direction({ origin, destination }) {
+
     const [directionResponse, setDirectionResponse] = useState(null);
     return (
         <LoadScript

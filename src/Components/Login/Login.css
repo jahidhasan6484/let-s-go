@@ -1,5 +1,12 @@
-.login-style {
-    margin-top: 5rem;
+.loginStyle {
     text-align: center;
     background-color: rgb(240, 240, 240);
+    border-radius: 1rem;
+    padding-bottom: 5rem;
+}
+.branding {
+    margin-top: 12rem;
+}
+.loginForm {
+    margin-top: 5rem;
 }

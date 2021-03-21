@@ -14,7 +14,7 @@ const Profile = () => {
     return (
         <div>
             <div className="container my-5 py-5">
-                <div className="card text-center col-md-8 mx-auto profile">
+                <div className="card text-center col-md-5 mx-auto profile">
                     <div className="card-header">
                         <h4>My Profile</h4>
                     </div>

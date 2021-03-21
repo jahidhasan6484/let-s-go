@@ -58,10 +58,8 @@ const Destinations = () => {
                     </form>
                     <div>
                         {
-                            searchLocation.search && <p>{searchLocation.pickFrom} <br />{searchLocation.pickTo}</p>
+                            searchLocation.search && <p>From: {searchLocation.pickFrom} <br />To: {searchLocation.pickTo}</p>
                         }
-                        {/* && <img src={photo} alt="" srcset="" width="50px" /> && <p>{name}</p> && <img src={person} alt="" srcset="" /> && <p>{{ person_no }}</p> &&
-                            <p>{price}</p> */}
                     </div>
                 </div>
                 <div className="col-md-8">

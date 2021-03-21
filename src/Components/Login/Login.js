@@ -5,7 +5,7 @@ import firebaseConfig from './firebase.config';
 import { UserContext } from '../../App';
 import { useHistory, useLocation } from 'react-router';
 import facebookLogo from '../../images/facebookLogo.png';
-import googleLogo from '../../images/g.png';
+import googleLogo from '../../images/GoogleLogo.png';
 import './Login.css';
 
 const Login = () => {
@@ -120,7 +120,6 @@ const Login = () => {
                     newUserInfo.error = "";
                     newUserInfo.success = true;
                     setNewUser(newUserInfo);
-                    //............
                     setLoggedInUser(newUser);
                     history.replace(from);
 

@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Body from '../Body/Body';
 import data from '../Data/data.json';
-import './Home.css';
 
 const Home = () => {
     const [transports, setTransport] = useState([]);

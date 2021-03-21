@@ -9,7 +9,7 @@ const Body = (props) => {
     return (
         <div className="col-md-3 my-3 mt-5">
             <Card>
-                <Card.Img style={{ width: 200, height: 200, cursor: 'pointer', textAlign: 'center' }} className="imgStyle" src={photo} />
+                <Card.Img variant="top" src={photo} className="imgStyle" height="150px" />
                 <Card.Body>
                     <div className="text-center">
                         <h3 className="text-dark">{name}</h3>

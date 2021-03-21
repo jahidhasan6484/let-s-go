@@ -8,11 +8,14 @@ import {
   Route,
   Link
 } from "react-router-dom";
-import Footer from './Components/Footer/Footer';
 import Login from './Components/Login/Login';
 import Profile from './Components/Profile/Profile';
 import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
-import Destinations from './Components/Destination/Destinations';
+import Destinations from './Components/Destination/Destination';
+import Blog from './Components/Blog/Blog';
+import NotFound from './Components/NotFound/NotFound';
+import Contact from './Components/Contact/Contact';
+import Footer from './Components/Footer/Footer';
 
 export const UserContext = createContext();
 
@@ -36,14 +39,23 @@ function App() {
           <Route path="/profile">
             <Profile></Profile>
           </Route>
-          <PrivateRoute path="/destinations/:id">
+          <PrivateRoute path="/destination/:id">
             <Destinations></Destinations>
           </PrivateRoute>
+          <PrivateRoute path="/destination">
+            <Destinations></Destinations>
+          </PrivateRoute>
+          <Route path="/contact">
+            <Contact></Contact>
+          </Route>
+          <Route path="/blog">
+            <Blog></Blog>
+          </Route>
           <Route path="*">
-            <h1 className="text-center my-5">404 - Not Found!</h1>
+            <NotFound></NotFound>
           </Route>
         </Switch>
-        <Footer></Footer>
+        <Footer></Footer>>
       </Router>
     </UserContext.Provider>
 

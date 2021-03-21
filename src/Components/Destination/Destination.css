@@ -1,8 +1,6 @@
-.search-location {
-    background-color: rgb(245, 244, 244);
-    padding: 1rem;
+.search-form {
+    margin-top: 10rem;
+    padding-bottom: 2rem;
+    background-color: rgb(240, 240, 240);
     border-radius: 1rem;
-}
-.ticket-details {
-    display: flex;
 }

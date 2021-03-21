@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Body from '../Body/Body';
 import data from '../Data/data.json';
+import Header from '../Header/Header';
 
 const Home = () => {
     const [transports, setTransport] = useState([]);
@@ -14,6 +15,9 @@ const Home = () => {
             <div className="row">
                 {
                     transports.map(transport => <Body transport={transport}></Body>)
+                }
+                {
+                    transports.map(transport => <Header transport={transport}></Header>)
                 }
             </div>
         </div>
